@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url('../images/bg-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--violet);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--softMagenta);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--violet);  /* creates padding around scroll thumb */
+  }
+
+main {
+    max-width: 1440px;
+}
+
+header {
+    margin: 30px 70px;
+}
+
+header img {
+    width: 215px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container aside {
+    flex: 1;
+    padding: 30px 0 0 72px;
+}
+
+.container section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 74px 0 0 54px;
+}
+
+.container section h1,
+.container section h2 {
+    color: white;
+    font-size: 39.5px;
+    font-family: 'Poppins';
+}
+
+.container section span {
+    color: #eee;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-top: 20px;
+    margin-right: 70px;
+    line-height: 1.5;
+}
+
+.container section button {
+    width: 200px;
+    background-color: #eee;
+    color: var(--violet);
+    border: none;
+    border-radius: 30px;
+    height: 55px;
+    line-height: 55px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.container section button:hover {
+    background-color: var(--softMagenta);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 182px;
+    margin-right: 62px;
+}
+
+.socials-fb,
+.socials-tw,
+.socials-ig {
+    width: 20px;
+    height: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 14px;
+}
+
+.socials-fb:hover,
+.socials-tw:hover,
+.socials-ig:hover {
+    color: var(--softMagenta);
+    border-color: var(--softMagenta);
+    cursor: pointer;
+}
+
+@media(max-width: 1300px) {
+    main {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    header {
+        margin: 30px 0 0 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container aside {
+        padding: 0;
+    }
+
+    .container section {
+        padding: 0;
+        margin-top: 57px;
+        padding: 0 35px;
+    }
+
+    .container section h1,
+    .container section h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container section span {
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 18px;
+    }
+
+    .container section button {
+        margin: auto;
+        margin-top: 23px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 12px;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 65px;
+    }
+
+    .socials-fb,
+    .socials-tw,
+    .socials-ig {
+        width: 14px;        
+        height: 14px;
+        margin-left: 0;
+        padding: 6px;
+    }
+
+    .socials-fb {
+        margin-right: 5px;
+    }
+
+    .socials-tw {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .socials-ig {
+        margin-left: 5px;
+    }
+}
+
+@media(max-width: 750px) {
+    body {
+        background-image: url('../images/bg-mobile.svg');
+    }
+
+    main {
+        max-width: 375px;
+        margin: auto;
+    }
+
+    header {
+        margin: 22px 0 0 35px;
+    }
+
+    header img {
+        width: 130px;
+        height: 50px;
+    }
+
+    .container aside img {
+        width: 300px;
+        margin: 47px 0 0 37px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container aside {
+        padding: 0;
+    }
+
+    .container section {
+        padding: 0;
+        margin-top: 57px;
+        padding: 0 35px;
+    }
+
+    .container section h1,
+    .container section h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container section span {
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 18px;
+    }
+
+    .container section button {
+        margin: auto;
+        margin-top: 23px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 12px;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 65px;
+    }
+
+    .socials-fb,
+    .socials-tw,
+    .socials-ig {
+        width: 14px;        
+        height: 14px;
+        margin-left: 0;
+        padding: 6px;
+    }
+
+    .socials-fb {
+        margin-right: 5px;
+    }
+
+    .socials-tw {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .socials-ig {
+        margin-left: 5px;
+    }
+}
